@@ -20,12 +20,12 @@ class Teacher:
         print('3. Object destroyed')
 
 t1 = Teacher("Semmy",30)
-# t2 = Teacher("Any",22)
+t2 = Teacher("Any",22)
 
 
-print(repr(t1))  # Teacher(name=Semmy, age=30)
+# print(repr(t1))  # Teacher(name=Semmy, age=30)
 # print(repr(t2))  # Teacher(name=Any, age=22)
-print(str(t1))   # Teacher Regi, 30 years old
+# print(str(t1))   # Teacher Regi, 30 years old
 
 #delete object
 del t1
