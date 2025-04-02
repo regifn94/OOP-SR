@@ -4,6 +4,7 @@ class Mobil:
         self.warna = warna
         self.__tahunPembuatan = tahunPembuatan
         self.__kecepatan = 0
+        self.__ktp = 5
     
     def ubahKecepatan(self, kecepatanBaru):
         self.__kecepatan = kecepatanBaru
@@ -17,9 +18,21 @@ class Mobil:
         print("Tahun pembuatan : ", self.__tahunPembuatan)
         print("Kecepatan saat ini : ", self.__kecepatan)
     
+    def set_ktp(self , ktp):
+        if ktp > 17:
+            self.__ktp = ktp
+        else:
+            print("belum boleh membuat KTP")
+    
+    def get_ktp(self):
+        return self.__ktp
+    
+    
 mobil = Mobil("Avanza", "Merah", 2010)
-mobil.informasiMobil()
-print("=====================")
-mobil.ubahKecepatan("200")
-mobil.informasiMobil()
-mobil.__matikanMesin()
+# mobil.informasiMobil()
+# print("=====================")
+# mobil.ubahKecepatan("200")
+# mobil.informasiMobil()
+# mobil.__matikanMesin()
+mobil.set_ktp(18)
+print(mobil.get_ktp())
