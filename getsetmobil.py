@@ -4,7 +4,7 @@ class Mobil:
         self.warna = warna
         self.__tahunPembuatan = tahunPembuatan
         self.__kecepatan = 0
-        self.__ktp = 5
+        self.__ktp = 0
     
     def ubahKecepatan(self, kecepatanBaru):
         self.__kecepatan = kecepatanBaru
@@ -29,10 +29,12 @@ class Mobil:
     
     
 mobil = Mobil("Avanza", "Merah", 2010)
-# mobil.informasiMobil()
-# print("=====================")
-# mobil.ubahKecepatan("200")
-# mobil.informasiMobil()
+
+mobil.informasiMobil()
+print("=====================")
+mobil.ubahKecepatan("200")
+mobil.informasiMobil()
 # mobil.__matikanMesin()
-mobil.set_ktp(18)
+# mobil.set_ktp(18)
 print(mobil.get_ktp())
+# print(mobil.get_ktp())
